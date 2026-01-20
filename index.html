@@ -9,190 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght @400;600;700&display=swap" rel="stylesheet">
 
-<style>
-:root{
-  --bg:#0a0b0f;
-  --card:#141622;
-  --text:#f3f4f8;
-  --sub:#9ea3b1;
-  --accent:#c6b07c;
-}
-
-body.light{
-  --bg:#f7f6f3;
-  --card:#ffffff;
-  --text:#1b1d24;
-  --sub:#6e7380;
-  --accent:#b59a5b;
-}
-
-*{box-sizing:border-box;}
-
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font-family:"Noto Serif KR", serif;
-}
-
-/* 컨테이너 */
-.container{
-  max-width:920px;
-  margin:auto;
-  padding:40px 24px 64px;
-}
-
-h1{
-  font-size:36px;
-  letter-spacing:3px;
-  margin-bottom:8px;
-}
-
-.subtitle{
-  font-size:14px;
-  color:var(--sub);
-  margin-bottom:28px;
-}
-
-.actions{
-  display:flex;
-  gap:14px;
-  margin-bottom:32px;
-}
-
-button{
-  padding:16px 28px;
-  border-radius:22px;
-  border:1px solid rgba(198,176,124,.6);
-  background:transparent;
-  color:var(--accent);
-  font-size:15px;
-  font-family:"Noto Serif KR", serif;
-  cursor:pointer;
-}
-
-/* 🔥 카드 */
-.card{
-  padding:26px 28px;
-  border-radius:26px;
-  margin-bottom:28px;
-  background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0));
-  border:1px solid rgba(255,255,255,0.08);
-
-  /* ✅ 가운데 정렬 핵심 */
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
-
-/* 로또 줄 */
-.row{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin-bottom:22px;
-
-  /* ✅ 가운데 정렬 */
-  justify-content:center;
-}
-
-.balls{
-  display:flex;
-  gap:10px;
-
-  /* ✅ 가운데 정렬 */
-  justify-content:center;
-}
-
-.ball{
-  width:42px;
-  height:42px;
-  font-size:16px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:700;
-  color:#fff;
-  opacity:0;
-  transform:scale(.7);
-  animation:appear .35s ease forwards;
-  font-family:system-ui,sans-serif;
-}
-
- @keyframes appear{
-  to{opacity:1;transform:scale(1);}
-}
-
-/* BONUS */
-.bonus-line{
-  display:flex;
-  align-items:center;
-  gap:8px;
-}
-
-.bonus{
-  font-size:14px;
-  color:var(--sub);
-}
-
-.bonus-line .ball{
-  width:48px;
-  height:48px;
-  font-size:18px;
-  box-shadow:
-    0 0 10px rgba(198,176,124,.55),
-    0 0 22px rgba(198,176,124,.35);
-}
-
-.yellow{background:#f5c400;}
-.blue{background:#3a7bd5;}
-.red{background:#e84545;}
-.gray{background:#8e8e8e;}
-.green{background:#2ecc71;}
-
-.lucky-number{
-  text-align:center;
-  font-size:48px;
-  margin-top:18px;
-  color:var(--accent);
-  letter-spacing:4px;
-  font-family:system-ui,sans-serif;
-}
-
-.footer{
-  text-align:center;
-  font-size:11px;
-  color:var(--sub);
-  margin-top:36px;
-}
-
-/* 모바일 */
- @media(max-width:600px){
-  .container{
-    max-width:100%;
-    padding:24px 14px 48px;
-  }
-
-  h1{font-size:28px}
-  .actions{flex-direction:column}
-
-  .ball{
-    width:34px;
-    height:34px;
-    font-size:14px;
-  }
-
-  .bonus-line .ball{
-    width:38px;
-    height:38px;
-    font-size:15px;
-  }
-
-  .row{gap:6px}
-  .balls{gap:6px}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2053029254522890"
      crossorigin="anonymous"></script>
 <meta name="google-adsense-account" content="ca-pub-2053029254522890">
@@ -200,8 +17,19 @@ button{
 
 <body>
 <div class="container">
-  <h1>NUMÉRO 45</h1>
-  <div class="subtitle">Curated Numbers for Your Fortune</div>
+  <div class="header">
+    <a href="index.html" class="logo">NUMÉRO 45</a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="articles.html">Articles</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+
+  <div class="card">
+    <p>Welcome to NUMÉRO 45, your personal companion for lottery number generation. This tool is designed to provide you with randomly generated numbers for your lottery tickets, all presented in a clean and beautiful interface. Explore our articles for fun insights into the world of lotteries, and remember to play responsibly!</p>
+  </div>
 
   <div class="actions">
     <button id="drawBtn" onclick="draw()">번호 생성</button>

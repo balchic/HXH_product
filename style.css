@@ -1,0 +1,253 @@
+:root{
+  --bg:#0a0b0f;
+  --card:#141622;
+  --text:#f3f4f8;
+  --sub:#9ea3b1;
+  --accent:#c6b07c;
+}
+
+body.light{
+  --bg:#f7f6f3;
+  --card:#ffffff;
+  --text:#1b1d24;
+  --sub:#6e7380;
+  --accent:#b59a5b;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Noto Serif KR", serif;
+}
+
+/* Header and Navigation */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  font-size: 16px;
+  color: var(--sub);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: var(--text);
+}
+
+
+/* 컨테이너 */
+.container{
+  max-width:920px;
+  margin:auto;
+  padding:40px 24px 64px;
+}
+
+h1{
+  font-size:36px;
+  letter-spacing:3px;
+  margin-bottom:8px;
+}
+
+.subtitle{
+  font-size:14px;
+  color:var(--sub);
+  margin-bottom:28px;
+}
+
+.actions{
+  display:flex;
+  gap:14px;
+  margin-bottom:32px;
+}
+
+button{
+  padding:16px 28px;
+  border-radius:22px;
+  border:1px solid rgba(198,176,124,.6);
+  background:transparent;
+  color:var(--accent);
+  font-size:15px;
+  font-family:"Noto Serif KR", serif;
+  cursor:pointer;
+}
+
+/* 🔥 카드 */
+.card{
+  padding:26px 28px;
+  border-radius:26px;
+  margin-bottom:28px;
+  background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0));
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.card p {
+    line-height: 1.8;
+}
+
+.card h2 {
+    margin-top: 30px;
+    color: var(--accent);
+}
+
+
+/* 로또 줄 */
+.row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:22px;
+
+  /* ✅ 가운데 정렬 */
+  justify-content:center;
+}
+
+.balls{
+  display:flex;
+  gap:10px;
+
+  /* ✅ 가운데 정렬 */
+  justify-content:center;
+}
+
+.ball{
+  width:42px;
+  height:42px;
+  font-size:16px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:#fff;
+  opacity:0;
+  transform:scale(.7);
+  animation:appear .35s ease forwards;
+  font-family:system-ui,sans-serif;
+}
+
+ @keyframes appear{
+  to{opacity:1;transform:scale(1);}
+}
+
+/* BONUS */
+.bonus-line{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.bonus{
+  font-size:14px;
+  color:var(--sub);
+}
+
+.bonus-line .ball{
+  width:48px;
+  height:48px;
+  font-size:18px;
+  box-shadow:
+    0 0 10px rgba(198,176,124,.55),
+    0 0 22px rgba(198,176,124,.35);
+}
+
+.yellow{background:#f5c400;}
+.blue{background:#3a7bd5;}
+.red{background:#e84545;}
+.gray{background:#8e8e8e;}
+.green{background:#2ecc71;}
+
+.lucky-number{
+  text-align:center;
+  font-size:48px;
+  margin-top:18px;
+  color:var(--accent);
+  letter-spacing:4px;
+  font-family:system-ui,sans-serif;
+}
+
+.footer{
+  text-align:center;
+  font-size:11px;
+  color:var(--sub);
+  margin-top:36px;
+}
+
+.article-list {
+    margin-top: 30px;
+}
+
+.article-item {
+    margin-bottom: 20px;
+}
+
+.article-item h3 {
+    margin: 0;
+}
+
+.article-item h3 a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.article-item p {
+    margin: 5px 0 0;
+    color: var(--sub);
+}
+
+
+/* 모바일 */
+ @media(max-width:600px){
+  .container{
+    max-width:100%;
+    padding:24px 14px 48px;
+  }
+
+  h1{font-size:28px}
+  .actions{flex-direction:column}
+
+  .ball{
+    width:34px;
+    height:34px;
+    font-size:14px;
+  }
+
+  .bonus-line .ball{
+    width:38px;
+    height:38px;
+    font-size:15px;
+  }
+
+  .row{gap:6px}
+  .balls{gap:6px}
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
