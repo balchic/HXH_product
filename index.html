@@ -1,14 +1,283 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+<meta charset="UTF-8">
+<title>NUMÉRO 45</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght @400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0a0b0f;
+  --card:#141622;
+  --text:#f3f4f8;
+  --sub:#9ea3b1;
+  --accent:#c6b07c;
+}
+
+body.light{
+  --bg:#f7f6f3;
+  --card:#ffffff;
+  --text:#1b1d24;
+  --sub:#6e7380;
+  --accent:#b59a5b;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Noto Serif KR", serif;
+}
+
+/* 컨테이너 */
+.container{
+  max-width:920px;
+  margin:auto;
+  padding:40px 24px 64px;
+}
+
+h1{
+  font-size:36px;
+  letter-spacing:3px;
+  margin-bottom:8px;
+}
+
+.subtitle{
+  font-size:14px;
+  color:var(--sub);
+  margin-bottom:28px;
+}
+
+.actions{
+  display:flex;
+  gap:14px;
+  margin-bottom:32px;
+}
+
+button{
+  padding:16px 28px;
+  border-radius:22px;
+  border:1px solid rgba(198,176,124,.6);
+  background:transparent;
+  color:var(--accent);
+  font-size:15px;
+  font-family:"Noto Serif KR", serif;
+  cursor:pointer;
+}
+
+/* 🔥 카드 */
+.card{
+  padding:26px 28px;
+  border-radius:26px;
+  margin-bottom:28px;
+  background:linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0));
+  border:1px solid rgba(255,255,255,0.08);
+
+  /* ✅ 가운데 정렬 핵심 */
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* 로또 줄 */
+.row{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:22px;
+
+  /* ✅ 가운데 정렬 */
+  justify-content:center;
+}
+
+.balls{
+  display:flex;
+  gap:10px;
+
+  /* ✅ 가운데 정렬 */
+  justify-content:center;
+}
+
+.ball{
+  width:42px;
+  height:42px;
+  font-size:16px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  color:#fff;
+  opacity:0;
+  transform:scale(.7);
+  animation:appear .35s ease forwards;
+  font-family:system-ui,sans-serif;
+}
+
+ @keyframes appear{
+  to{opacity:1;transform:scale(1);}
+}
+
+/* BONUS */
+.bonus-line{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.bonus{
+  font-size:14px;
+  color:var(--sub);
+}
+
+.bonus-line .ball{
+  width:48px;
+  height:48px;
+  font-size:18px;
+  box-shadow:
+    0 0 10px rgba(198,176,124,.55),
+    0 0 22px rgba(198,176,124,.35);
+}
+
+.yellow{background:#f5c400;}
+.blue{background:#3a7bd5;}
+.red{background:#e84545;}
+.gray{background:#8e8e8e;}
+.green{background:#2ecc71;}
+
+.lucky-number{
+  text-align:center;
+  font-size:48px;
+  margin-top:18px;
+  color:var(--accent);
+  letter-spacing:4px;
+  font-family:system-ui,sans-serif;
+}
+
+.footer{
+  text-align:center;
+  font-size:11px;
+  color:var(--sub);
+  margin-top:36px;
+}
+
+/* 모바일 */
+ @media(max-width:600px){
+  .container{
+    max-width:100%;
+    padding:24px 14px 48px;
+  }
+
+  h1{font-size:28px}
+  .actions{flex-direction:column}
+
+  .ball{
+    width:34px;
+    height:34px;
+    font-size:14px;
+  }
+
+  .bonus-line .ball{
+    width:38px;
+    height:38px;
+    font-size:15px;
+  }
+
+  .row{gap:6px}
+  .balls{gap:6px}
+}
+</style>
 </head>
+
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+<div class="container">
+  <h1>NUMÉRO 45</h1>
+  <div class="subtitle">Curated Numbers for Your Fortune</div>
+
+  <div class="actions">
+    <button id="drawBtn" onclick="draw()">번호 생성</button>
+    <button onclick="toggleMode()">라이트 / 다크</button>
+  </div>
+
+  <div class="card" id="lottoArea"></div>
+
+  <div class="card">
+    <div class="subtitle">오늘의 행운 넘버</div>
+    <div class="lucky-number" id="luckyNumber">—</div>
+  </div>
+
+  <div class="footer">© NUMÉRO 45</div>
+</div>
+
+<script>
+const sleep = ms => new Promise(r=>setTimeout(r,ms));
+const color = n => n<=10?'yellow':n<=20?'blue':n<=30?'red':n<=40?'gray':'green';
+
+function generateSet(){
+  const nums=[];
+  while(nums.length<6){
+    const n=Math.floor(Math.random()*45)+1;
+    if(!nums.includes(n)) nums.push(n);
+  }
+  nums.sort((a,b)=>a-b);
+  let bonus;
+  do{bonus=Math.floor(Math.random()*45)+1;}while(nums.includes(bonus));
+  return{nums,bonus};
+}
+
+async function draw(){
+  const area=document.getElementById("lottoArea");
+  const btn=document.getElementById("drawBtn");
+  btn.disabled=true;
+  area.innerHTML="";
+
+  for(let i=0;i<5;i++){
+    const{nums,bonus}=generateSet();
+    const row=document.createElement("div");
+    row.className="row";
+
+    const balls=document.createElement("div");
+    balls.className="balls";
+    row.appendChild(balls);
+    area.appendChild(row);
+
+    for(const n of nums){
+      const b=document.createElement("div");
+      b.className=`ball ${color(n)}`;
+      b.textContent=n;
+      balls.appendChild(b);
+      await sleep(300);
+    }
+
+    const bonusLine=document.createElement("div");
+    bonusLine.className="bonus-line";
+    const label=document.createElement("span");
+    label.className="bonus";
+    label.textContent="+";
+    const bb=document.createElement("div");
+    bb.className=`ball ${color(bonus)}`;
+    bb.textContent=bonus;
+    bonusLine.append(label,bb);
+    row.appendChild(bonusLine);
+
+    await sleep(420);
+  }
+
+  document.getElementById("luckyNumber").textContent =
+    Math.floor(Math.random()*50)+1;
+
+  btn.disabled=false;
+}
+
+function toggleMode(){
+  document.body.classList.toggle("light");
+}
+</script>
 </body>
 </html>
