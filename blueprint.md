@@ -51,3 +51,8 @@ This project aims to enhance the existing "NUMÉRO 45" lottery number generator 
     *   Create `translations.js` with all Korean, English, and Chinese translations.
     *   Create `app.js` with language switching logic and `localStorage` persistence.
     *   Add styling for language buttons in `style.css`.
+9.  **[completed]** **Update Korean Content for `about.html`:** Replace the descriptive text in `about.html` with the refined Korean content provided by the user.
+10. **[completed]** **Update Korean Content for `privacy.html`:** Replace the privacy policy text in `privacy.html` with the refined Korean content provided by the user.
+11. **[completed]** **Update Korean Content for `article-1.html`:** Replace the English content about "The History of the Lottery" with the Korean content "로또의 역사".
+12. **[completed]** **Update Korean Content for `article-2.html`:** Replace the English content about "Strategies for Choosing Numbers" with the Korean content "번호 선택 전략".
+13. **[completed]** **Update Korean Content for `article-3.html`:** Replace the English content about "Understanding Lottery Odds" with the Korean content "로또 당첨 확률 이해하기".
