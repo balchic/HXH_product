@@ -2,8 +2,24 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>NUMÉRO 45</title>
+<title>NUMÉRO 45 - 행운의 로또 번호 생성기</title>
+<meta name="description" content="NUMÉRO 45에서 행운의 로또 번호를 받아보세요. 매주 추천되는 새로운 번호 조합으로 당첨 확률을 높여보세요. 심플하고 아름다운 인터페이스를 통해 행운을 시험해볼 수 있습니다.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://your-domain.com/index.html">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://your-domain.com/index.html">
+<meta property="og:title" content="NUMÉRO 45 - 행운의 로또 번호 생성기">
+<meta property="og:description" content="매주 추천되는 새로운 번호 조합으로 당첨 확률을 높여보세요. 심플하고 아름다운 인터페이스를 통해 행운을 시험해볼 수 있습니다.">
+<meta property="og:image" content="https://your-domain.com/images/lotto-og-image.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://your-domain.com/index.html">
+<meta property="twitter:title" content="NUMÉRO 45 - 행운의 로또 번호 생성기">
+<meta property="twitter:description" content="매주 추천되는 새로운 번호 조합으로 당첨 확률을 높여보세요.">
+<meta property="twitter:image" content="https://your-domain.com/images/lotto-og-image.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,34 +50,47 @@
 
 <body>
 <div class="container">
-  <div class="header">
-    <a href="index.html" class="logo">NUMÉRO 45</a>
+  <header class="header">
+    <div class="header-top">
+      <a href="index.html" class="logo" data-i18n-key="logo">NUMÉRO 45</a>
+      <div class="lang-switcher">
+        <button onclick="setLanguage('ko')">한국어</button>
+        <button onclick="setLanguage('en')">ENGLISH</button>
+        <button onclick="setLanguage('zh')">中文</button>
+      </div>
+    </div>
     <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="articles.html">Articles</a>
-      <a href="about.html">About</a>
-      <a href="privacy.html">Privacy</a>
+      <a href="index.html" class="active" data-i18n-key="navHome">Home</a>
+      <a href="articles.html" data-i18n-key="navArticles">Articles</a>
+      <a href="about.html" data-i18n-key="navAbout">About</a>
+      <a href="privacy.html" data-i18n-key="navPrivacy">Privacy</a>
     </nav>
-  </div>
+  </header>
 
-  <div class="card">
-    <p>Welcome to NUMÉRO 45, your personal companion for lottery number generation. This tool is designed to provide you with randomly generated numbers for your lottery tickets, all presented in a clean and beautiful interface. Explore our articles for fun insights into the world of lotteries, and remember to play responsibly!</p>
-  </div>
+  <main>
+    <section class="card">
+      <h1 data-i18n-key="mainTitle">NUMÉRO 45: 당신의 행운을 위한 로또 번호 생성기</h1>
+      <p data-i18n-key="mainDesc">NUMÉRO 45에 오신 것을 환영합니다. 이곳은 당신의 로또 티켓을 위한 개인 맞춤 번호 생성 동반자입니다. 이 도구는 무작위로 생성된 번호를 깔끔하고 아름다운 인터페이스로 제공하도록 설계되었습니다. 복권의 세계에 대한 재미있는 통찰력을 얻으려면 저희 기사를 둘러보시고, 책임감 있게 즐기는 것을 잊지 마세요!</p>
+    </section>
 
-  <div class="actions">
-    <button id="drawBtn" onclick="draw()">🎲</button>
-    <button onclick="toggleMode()">☀️/🌙</button>
-  </div>
+    <section class="actions">
+      <button id="drawBtn" onclick="draw()" data-i18n-key="drawButton">🎲 번호 생성</button>
+      <button onclick="toggleMode()">☀️/🌙</button>
+    </section>
 
-  <div class="card" id="lottoArea"></div>
+    <section class="card" id="lottoArea"></section>
 
-  <div class="card">
-    <div class="subtitle">Lucky Number</div>
-    <div class="lucky-number" id="luckyNumber">—</div>
-  </div>
+    <section class="card">
+      <h2 class="subtitle" data-i18n-key="luckyNumberTitle">오늘의 행운의 숫자</h2>
+      <div class="lucky-number" id="luckyNumber">—</div>
+    </section>
+  </main>
 
-  <div class="footer">© NUMÉRO 45</div>
+  <footer class="footer" data-i18n-key="footerText">© NUMÉRO 45</footer>
 </div>
+
+<script src="translations.js"></script>
+<script src="app.js"></script>
 
 <script>
 const sleep = ms => new Promise(r=>setTimeout(r,ms));

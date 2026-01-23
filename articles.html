@@ -2,12 +2,28 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>Articles - NUMÉRO 45</title>
+<title>아티클 - NUMÉRO 45</title>
+<meta name="description" content="로또와 관련된 흥미로운 아티클들을 만나보세요. 로또의 역사, 번호 선택 전략, 확률에 대한 이해 등 다양한 정보를 제공합니다.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://your-domain.com/articles.html">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://your-domain.com/articles.html">
+<meta property="og:title" content="아티클 - NUMÉRO 45">
+<meta property="og:description" content="로또와 관련된 흥미로운 아티클들을 만나보세요. 로또의 역사, 번호 선택 전략, 확률에 대한 이해 등 다양한 정보를 제공합니다.">
+<meta property="og:image" content="https://your-domain.com/images/lotto-articles-og.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://your-domain.com/articles.html">
+<meta property="twitter:title" content="아티클 - NUMÉRO 45">
+<meta property="twitter:description" content="로또와 관련된 흥미로운 아티클들을 만나보세요.">
+<meta property="twitter:image" content="https://your-domain.com/images/lotto-articles-og.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght @400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YM1E0SDTH6"></script>
@@ -29,36 +45,48 @@
 </head>
 <body>
 <div class="container">
-  <div class="header">
-    <a href="index.html" class="logo">NUMÉRO 45</a>
+  <header class="header">
+    <div class="header-top">
+      <a href="index.html" class="logo" data-i18n-key="logo">NUMÉRO 45</a>
+      <div class="lang-switcher">
+        <button onclick="setLanguage('ko')">한국어</button>
+        <button onclick="setLanguage('en')">ENGLISH</button>
+        <button onclick="setLanguage('zh')">中文</button>
+      </div>
+    </div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="articles.html" class="active">Articles</a>
-      <a href="about.html">About</a>
-      <a href="privacy.html">Privacy</a>
+      <a href="index.html" data-i18n-key="navHome">Home</a>
+      <a href="articles.html" class="active" data-i18n-key="navArticles">Articles</a>
+      <a href="about.html" data-i18n-key="navAbout">About</a>
+      <a href="privacy.html" data-i18n-key="navPrivacy">Privacy</a>
     </nav>
-  </div>
+  </header>
 
-  <h1>Articles</h1>
-  <div class="card">
-    <p>Here you will find articles about lotteries, strategies, and other fun content. Stay tuned for more!</p>
-    </div>
-    <div class="article-list">
-        <div class="article-item">
-            <h3><a href="article-1.html">The History of the Lottery</a></h3>
-            <p>Discover the fascinating history of lotteries, from ancient times to the modern day.</p>
-        </div>
-        <div class="article-item">
-            <h3><a href="article-2.html">Strategies for Choosing Numbers</a></h3>
-            <p>Explore different strategies for picking your lottery numbers. For entertainment purposes only!</p>
-        </div>
-        <div class="article-item">
-            <h3><a href="article-3.html">Understanding Lottery Odds</a></h3>
-            <p>A simple guide to understanding the probabilities behind the lottery.</p>
-        </div>
-    </div>
+  <main>
+    <h1 data-i18n-key="articlesTitle">아티클</h1>
+    <section class="card">
+      <p data-i18n-key="articlesDesc">이곳에서는 복권, 전략 및 기타 재미있는 콘텐츠에 대한 기사를 찾을 수 있습니다. 더 많은 소식을 기대해주세요!</p>
+    </section>
+    
+    <section class="article-list">
+        <article class="article-item card">
+            <h2 data-i18n-key="article1Title"><a href="article-1.html">로또의 역사</a></h2>
+            <p data-i18n-key="article1Desc">고대부터 현대까지, 복권의 매혹적인 역사를 발견해보세요.</p>
+        </article>
+        <article class="article-item card">
+            <h2 data-i18n-key="article2Title"><a href="article-2.html">번호 선택 전략</a></h2>
+            <p data-i18n-key="article2Desc">로또 번호 선택을 위한 다양한 전략을 살펴보세요. 오락 목적으로만 이용해주세요!</p>
+        </article>
+        <article class="article-item card">
+            <h2 data-i18n-key="article3Title"><a href="article-3.html">로또 확률 이해하기</a></h2>
+            <p data-i18n-key="article3Desc">복권 뒤에 숨겨진 확률을 이해하기 위한 간단한 안내서입니다.</p>
+        </article>
+    </section>
+  </main>
 
-  <div class="footer">© NUMÉRO 45</div>
+  <footer class="footer" data-i18n-key="footerText">© NUMÉRO 45</footer>
 </div>
+<script src="translations.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

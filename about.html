@@ -2,8 +2,24 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>About Us - NUMÉRO 45</title>
+<title>소개 - NUMÉRO 45</title>
+<meta name="description" content="NUMÉRO 45는 재미를 위해 만들어진 프로젝트로, 오락 목적으로 로또 번호 생성 서비스를 제공합니다. 저희의 목표와 가치에 대해 더 알아보세요.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://your-domain.com/about.html">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://your-domain.com/about.html">
+<meta property="og:title" content="소개 - NUMÉRO 45">
+<meta property="og:description" content="NUMÉRO 45는 재미를 위해 만들어진 프로젝트로, 오락 목적으로 로또 번호 생성 서비스를 제공합니다.">
+<meta property="og:image" content="https://your-domain.com/images/lotto-about-og.jpg">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://your-domain.com/about.html">
+<meta property="twitter:title" content="소개 - NUMÉRO 45">
+<meta property="twitter:description" content="NUMÉRO 45는 재미를 위해 만들어진 프로젝트로, 오락 목적으로 로또 번호 생성 서비스를 제공합니다.">
+<meta property="twitter:image" content="https://your-domain.com/images/lotto-about-og.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,24 +45,35 @@
 </head>
 <body>
 <div class="container">
-  <div class="header">
-    <a href="index.html" class="logo">NUMÉRO 45</a>
+  <header class="header">
+    <div class="header-top">
+      <a href="index.html" class="logo" data-i18n-key="logo">NUMÉRO 45</a>
+      <div class="lang-switcher">
+        <button onclick="setLanguage('ko')">한국어</button>
+        <button onclick="setLanguage('en')">ENGLISH</button>
+        <button onclick="setLanguage('zh')">中文</button>
+      </div>
+    </div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="articles.html">Articles</a>
-      <a href="about.html" class="active">About</a>
-      <a href="privacy.html">Privacy</a>
+      <a href="index.html" data-i18n-key="navHome">Home</a>
+      <a href="articles.html" data-i18n-key="navArticles">Articles</a>
+      <a href="about.html" class="active" data-i18n-key="navAbout">About</a>
+      <a href="privacy.html" data-i18n-key="navPrivacy">Privacy</a>
     </nav>
-  </div>
+  </header>
 
-  <h1>About NUMÉRO 45</h1>
-  <div class="card">
-    <p>NUMÉRO 45 is a project created for fun, providing lottery number generation services for entertainment purposes. We believe that luck is a part of life's enjoyment, and we hope our service adds a little spark to your day.</p>
-    <p>Our goal is to provide a simple, aesthetically pleasing, and enjoyable user experience. The numbers generated on this site are random and have no special meaning. Please enjoy our service lightly and for fun.</p>
-    <p>This website was created as a personal project and is continuously being updated with new features and content. Thank you for visiting.</p>
-  </div>
+  <main>
+    <h1 data-i18n-key="aboutTitle">NUMÉRO 45 소개</h1>
+    <section class="card">
+      <p data-i18n-key="aboutP1">NUMÉRO 45는 재미를 위해 만들어진 프로젝트로, 오락 목적으로 로또 번호 생성 서비스를 제공합니다. 우리는 행운이 삶의 즐거움의 일부라고 믿으며, 저희 서비스가 여러분의 하루에 작은 불꽃을 더하기를 바랍니다.</p>
+      <p data-i18n-key="aboutP2">저희의 목표는 간단하고, 미학적으로 만족스러우며, 즐거운 사용자 경험을 제공하는 것입니다. 이 사이트에서 생성된 번호는 무작위이며 특별한 의미가 없습니다. 저희 서비스를 가볍게 재미로 즐겨주세요.</p>
+      <p data-i18n-key="aboutP3">이 웹사이트는 개인 프로젝트로 제작되었으며 지속적으로 새로운 기능과 콘텐츠로 업데이트되고 있습니다. 방문해주셔서 감사합니다.</p>
+    </section>
+  </main>
 
-  <div class="footer">© NUMÉRO 45</div>
+  <footer class="footer" data-i18n-key="footerText">© NUMÉRO 45</footer>
 </div>
+<script src="translations.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
