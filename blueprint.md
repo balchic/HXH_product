@@ -56,3 +56,5 @@ This project aims to enhance the existing "NUMÉRO 45" lottery number generator 
 11. **[completed]** **Update Korean Content for `article-1.html`:** Replace the English content about "The History of the Lottery" with the Korean content "로또의 역사".
 12. **[completed]** **Update Korean Content for `article-2.html`:** Replace the English content about "Strategies for Choosing Numbers" with the Korean content "번호 선택 전략".
 13. **[completed]** **Update Korean Content for `article-3.html`:** Replace the English content about "Understanding Lottery Odds" with the Korean content "로또 당첨 확률 이해하기".
+14. **[completed]** **Ensure Article Title Visibility on Mobile:** Encapsulate `h1` titles in `article-*.html` within `<section class="card">` for consistent styling and improved mobile visibility.
+15. **[completed]** **Fix PC Display for Article Titles:** Adjust `style.css` to explicitly define color and margin for `h1` elements within `.card` sections, resolving visibility issues on PC.
