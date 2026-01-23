@@ -49,6 +49,71 @@ const translations = {
     "en": "© NUMÉRO 45",
     "zh": "© NUMÉRO 45"
   },
+  "footerDisclaimer": {
+    "ko": "본 서비스는 오락 목적으로만 제공됩니다. 로또 번호 생성 결과는 당첨을 보장하지 않습니다.",
+    "en": "This service is provided for entertainment purposes only. Generated lottery numbers do not guarantee winning.",
+    "zh": "本服务仅供娱乐目的。生成的彩票号码不保证中奖。"
+  },
+  "howToUseTitle": {
+    "ko": "NUMÉRO 45 사용 방법",
+    "en": "How to Use NUMÉRO 45",
+    "zh": "如何使用 NUMÉRO 45"
+  },
+  "howToUseDesc": {
+    "ko": "NUMÉRO 45는 한국 로또 6/45를 기반으로 한 무료 온라인 번호 생성기입니다. 사용 방법은 매우 간단합니다. 상단의 \"번호 생성\" 버튼을 클릭하면, 1부터 45까지의 숫자 중에서 무작위로 선택된 6개의 번호와 1개의 보너스 번호로 구성된 5세트의 번호 조합이 생성됩니다. 각 번호는 색상으로 구분되어 시각적으로 쉽게 확인할 수 있습니다.",
+    "en": "NUMÉRO 45 is a free online number generator based on Korea's Lotto 6/45. It's very simple to use. Click the \"Generate Numbers\" button at the top, and 5 sets of number combinations will be generated, each consisting of 6 randomly selected numbers from 1 to 45 plus 1 bonus number. Each number is color-coded for easy visual identification.",
+    "zh": "NUMÉRO 45是基于韩国乐透6/45的免费在线号码生成器。使用方法非常简单。点击顶部的\"生成号码\"按钮，将生成5组号码组合，每组由1到45中随机选择的6个号码和1个奖励号码组成。每个号码都有颜色标识，便于视觉识别。"
+  },
+  "howToUseDesc2": {
+    "ko": "번호 색상은 한국 로또의 공식 색상 체계를 따릅니다: 1-10번은 노란색, 11-20번은 파란색, 21-30번은 빨간색, 31-40번은 회색, 41-45번은 초록색입니다. 보너스 번호는 특별한 효과와 함께 더 큰 크기로 표시되어 쉽게 구별할 수 있습니다.",
+    "en": "The number colors follow the official Korean Lotto color scheme: 1-10 are yellow, 11-20 are blue, 21-30 are red, 31-40 are gray, and 41-45 are green. The bonus number is displayed in a larger size with special effects for easy distinction.",
+    "zh": "号码颜色遵循韩国乐透官方配色方案：1-10为黄色，11-20为蓝色，21-30为红色，31-40为灰色，41-45为绿色。奖励号码以更大的尺寸和特殊效果显示，便于区分。"
+  },
+  "aboutLottoTitle": {
+    "ko": "한국 로또 6/45 소개",
+    "en": "About Korean Lotto 6/45",
+    "zh": "韩国乐透6/45介绍"
+  },
+  "aboutLottoDesc": {
+    "ko": "한국 로또 6/45는 대한민국에서 가장 인기 있는 복권 게임입니다. 매주 토요일 저녁에 추첨이 진행되며, 1부터 45까지의 숫자 중 6개의 당첨 번호와 1개의 보너스 번호가 선정됩니다. 1등 당첨 확률은 약 814만분의 1이며, 당첨금은 매주 판매량에 따라 달라집니다.",
+    "en": "Korean Lotto 6/45 is the most popular lottery game in South Korea. Draws are held every Saturday evening, where 6 winning numbers and 1 bonus number are selected from numbers 1 to 45. The odds of winning the jackpot are approximately 1 in 8.14 million, and prize amounts vary based on weekly sales.",
+    "zh": "韩国乐透6/45是韩国最受欢迎的彩票游戏。每周六晚进行抽奖，从1到45的数字中选出6个中奖号码和1个奖励号码。头奖中奖概率约为814万分之一，奖金金额根据每周销售额而有所不同。"
+  },
+  "aboutLottoDesc2": {
+    "ko": "로또의 당첨 등급은 총 5등급으로 나뉩니다. 6개 번호를 모두 맞추면 1등, 5개 번호와 보너스 번호를 맞추면 2등, 5개 번호를 맞추면 3등, 4개 번호를 맞추면 4등, 3개 번호를 맞추면 5등에 해당합니다. NUMÉRO 45를 통해 행운의 번호를 확인해보세요.",
+    "en": "There are 5 prize tiers in total. Matching all 6 numbers wins 1st prize, 5 numbers plus the bonus wins 2nd, 5 numbers wins 3rd, 4 numbers wins 4th, and 3 numbers wins 5th prize. Try your luck with NUMÉRO 45 and check your lucky numbers.",
+    "zh": "奖项共分为5个等级。匹配全部6个号码获得一等奖，5个号码加奖励号码获得二等奖，5个号码获得三等奖，4个号码获得四等奖，3个号码获得五等奖。通过NUMÉRO 45试试您的运气吧。"
+  },
+  "tipsTitle": {
+    "ko": "로또 번호 선택 팁",
+    "en": "Tips for Choosing Lottery Numbers",
+    "zh": "选择彩票号码的技巧"
+  },
+  "tipsDesc": {
+    "ko": "로또는 완전한 무작위 추첨이므로 어떤 전략도 당첨을 보장할 수 없습니다. 하지만 더 즐겁게 로또를 즐기기 위한 몇 가지 팁을 소개합니다. 첫째, 다양한 숫자 범위에서 골고루 선택하세요. 둘째, 매주 같은 번호를 사용하거나 매번 새로운 번호를 생성하는 것은 순전히 개인 취향입니다. 셋째, 로또는 오락으로 즐기되, 과도한 구매는 피해주세요.",
+    "en": "Since the lottery is a completely random draw, no strategy can guarantee winning. However, here are some tips to enjoy the lottery more. First, choose numbers evenly from various number ranges. Second, whether you use the same numbers every week or generate new ones each time is purely personal preference. Third, enjoy the lottery as entertainment and avoid excessive purchases.",
+    "zh": "由于彩票是完全随机的抽奖，没有任何策略可以保证中奖。但是，以下是一些让您更享受彩票的技巧。首先，从各个数字范围中均匀选择号码。其次，每周使用相同的号码还是每次生成新号码纯粹是个人偏好。第三，将彩票作为娱乐享受，避免过度购买。"
+  },
+  "tipsDesc2": {
+    "ko": "NUMÉRO 45의 번호 생성기는 완전한 난수 알고리즘을 사용하여 편향 없는 번호를 제공합니다. 생성된 번호는 이전 당첨 번호와 무관하게 독립적으로 생성되며, 매번 새로운 조합을 경험할 수 있습니다. 재미있게 사용하시되, 책임감 있는 복권 구매를 권장합니다.",
+    "en": "NUMÉRO 45's number generator uses a completely random algorithm to provide unbiased numbers. Generated numbers are created independently of previous winning numbers, and you can experience new combinations every time. Have fun using it, but we encourage responsible lottery purchases.",
+    "zh": "NUMÉRO 45的号码生成器使用完全随机的算法提供无偏差的号码。生成的号码与之前的中奖号码无关，每次都能体验新的组合。请开心使用，但我们鼓励负责任的购彩。"
+  },
+  "featuresTitle": {
+    "ko": "NUMÉRO 45의 특징",
+    "en": "Features of NUMÉRO 45",
+    "zh": "NUMÉRO 45的特点"
+  },
+  "featuresDesc": {
+    "ko": "NUMÉRO 45는 사용자 경험을 최우선으로 설계되었습니다. 다크 모드와 라이트 모드를 지원하여 어떤 환경에서도 편안하게 사용할 수 있으며, 한국어, 영어, 중국어 세 가지 언어를 지원합니다. 번호 생성 시 부드러운 애니메이션 효과로 기대감을 높여주며, 모바일과 데스크톱 모두에서 최적화된 반응형 디자인을 제공합니다.",
+    "en": "NUMÉRO 45 is designed with user experience as the top priority. It supports dark and light modes for comfortable use in any environment, and offers three languages: Korean, English, and Chinese. Smooth animation effects when generating numbers build excitement, and the responsive design is optimized for both mobile and desktop.",
+    "zh": "NUMÉRO 45以用户体验为首要设计原则。支持深色和浅色模式，在任何环境下都能舒适使用，并提供韩语、英语和中文三种语言。生成号码时的流畅动画效果增加期待感，响应式设计在移动端和桌面端都进行了优化。"
+  },
+  "featuresDesc2": {
+    "ko": "또한 \"오늘의 행운의 숫자\" 기능을 통해 매일 새로운 럭키 넘버를 확인할 수 있습니다. 로또에 대한 유익한 기사들도 제공하고 있으니, 로또의 역사와 전략, 확률에 대해 더 알고 싶다면 아티클 섹션을 방문해보세요.",
+    "en": "Additionally, the \"Today's Lucky Number\" feature lets you check a new lucky number every day. We also provide informative articles about lotteries, so if you want to learn more about lottery history, strategies, and odds, visit our Articles section.",
+    "zh": "此外，\"今日幸运数字\"功能让您每天都能查看新的幸运数字。我们还提供有关彩票的信息文章，如果您想了解更多关于彩票历史、策略和概率的信息，请访问我们的文章专区。"
+  },
   "articlesTitle": {
     "ko": "아티클",
     "en": "Articles",
@@ -90,24 +155,39 @@ const translations = {
     "zh": "一个简单的指南，帮助您了解彩票背后的概率。"
   },
   "aboutTitle": {
-    "ko": "NUMÉRO 45 소개",
-    "en": "About NUMÉRO 45",
-    "zh": "关于NUMÉRO 45"
+    "ko": "NUMÉRO 45 – 행운을 디자인하다",
+    "en": "NUMÉRO 45 – Designing Luck",
+    "zh": "NUMÉRO 45 – 设计幸运"
   },
-  "aboutP1": {
-    "ko": "NUMÉRO 45는 재미를 위해 만들어진 프로젝트로, 오락 목적으로 로또 번호 생성 서비스를 제공합니다. 우리는 행운이 삶의 즐거움의 일부라고 믿으며, 저희 서비스가 여러분의 하루에 작은 불꽃을 더하기를 바랍니다.",
-    "en": "NUMÉRO 45 is a project created for fun, providing lottery number generation services for entertainment purposes. We believe that luck is a part of life's enjoyment, and we hope our service adds a little spark to your day.",
-    "zh": "NUMÉRO 45是一个为娱乐而创建的项目，提供彩票号码生成服务。我们相信运气是生活乐趣的一部分，希望我们的服务能为您的生活增添一点火花。"
+  "aboutWelcome": {
+    "ko": "NUMÉRO 45에 오신 것을 환영합니다.",
+    "en": "Welcome to NUMÉRO 45.",
+    "zh": "欢迎来到 NUMÉRO 45。"
   },
-  "aboutP2": {
-    "ko": "저희의 목표는 간단하고, 미학적으로 만족스러우며, 즐거운 사용자 경험을 제공하는 것입니다. 이 사이트에서 생성된 번호는 무작위이며 특별한 의미가 없습니다. 저희 서비스를 가볍게 재미로 즐겨주세요.",
-    "en": "Our goal is to provide a simple, aesthetically pleasing, and enjoyable user experience. The numbers generated on this site are random and have no special meaning. Please enjoy our service lightly and for fun.",
-    "zh": "我们的目标是提供一个简单、美观且愉悦的用户体验。本网站生成的号码是随机的，没有特殊含义。请轻松愉快地享受我们的服务。"
+  "aboutIntro": {
+    "ko": "NUMÉRO 45는 단순한 번호 생성기를 넘어, 당신의 선택 순간을 조금 더 즐겁게 만들어주는 로또 동반자입니다.",
+    "en": "NUMÉRO 45 is more than just a number generator — it's your lottery companion that makes the moment of choosing a little more enjoyable.",
+    "zh": "NUMÉRO 45不仅仅是一个号码生成器——它是您的彩票伴侣，让选择的瞬间变得更加愉快。"
   },
-  "aboutP3": {
-    "ko": "이 웹사이트는 개인 프로젝트로 제작되었으며 지속적으로 새로운 기능과 콘텐츠로 업데이트되고 있습니다. 방문해주셔서 감사합니다.",
-    "en": "This website was created as a personal project and is continuously being updated with new features and content. Thank you for visiting.",
-    "zh": "本网站作为个人项目创建，并不断更新新功能和内容。感谢您的访问。"
+  "aboutDesign": {
+    "ko": "정제된 디자인과 함께 무작위로 생성된 번호를 받아보고, 복권의 세계에 담긴 흥미로운 이야기들도 천천히 둘러보세요.",
+    "en": "Receive randomly generated numbers with a refined design, and explore the fascinating stories behind the world of lotteries.",
+    "zh": "通过精致的设计获取随机生成的号码，慢慢浏览彩票世界中蕴含的有趣故事。"
+  },
+  "aboutMission": {
+    "ko": "행운은 우연에서 시작되지만, 즐기는 태도는 언제나 책임감 있게. NUMÉRO 45는 '재미'를 위해 만들어진 프로젝트입니다. 이곳에서는 오락 목적으로 로또 번호를 생성하며, 행운이 일상의 작은 즐거움이 될 수 있다고 믿습니다. NUMÉRO 45가 여러분의 하루에 짧지만 반짝이는 순간을 더해주길 바랍니다.",
+    "en": "Luck begins with chance, but the attitude of enjoyment should always be responsible. NUMÉRO 45 is a project made for 'fun'. Here, we generate lottery numbers for entertainment purposes, and we believe that luck can be a small joy in everyday life. We hope NUMÉRO 45 adds a brief but sparkling moment to your day.",
+    "zh": "幸运始于偶然，但享受的态度应始终负责任。NUMÉRO 45是一个为「乐趣」而创建的项目。在这里，我们为娱乐目的生成彩票号码，我们相信幸运可以成为日常生活中的小快乐。希望NUMÉRO 45为您的一天增添一个短暂而闪亮的瞬间。"
+  },
+  "aboutGoal": {
+    "ko": "저희가 추구하는 목표는 단순합니다. 복잡하지 않고, 보기 좋으며, 사용하는 과정 자체가 즐거운 경험을 제공하는 것. 이 사이트에서 생성되는 번호는 완전히 무작위이며, 어떠한 특별한 의미나 예측 기능도 담고 있지 않습니다. 부담 없이, 가볍게 즐겨주세요.",
+    "en": "Our goal is simple: to provide an experience that is uncomplicated, visually pleasing, and enjoyable in itself. The numbers generated on this site are completely random and contain no special meaning or predictive function. Feel free to enjoy it lightly.",
+    "zh": "我们追求的目标很简单：提供一种不复杂、美观且使用过程本身就令人愉悦的体验。本网站生成的号码完全随机，不包含任何特殊含义或预测功能。请轻松愉快地享用。"
+  },
+  "aboutProject": {
+    "ko": "NUMÉRO 45는 개인 프로젝트로 시작되었으며, 앞으로도 새로운 기능과 콘텐츠를 조금씩 추가해 나갈 예정입니다. 방문해 주셔서 진심으로 감사합니다.",
+    "en": "NUMÉRO 45 started as a personal project and will continue to add new features and content over time. Thank you sincerely for visiting.",
+    "zh": "NUMÉRO 45作为个人项目起步，未来将继续逐步添加新功能和内容。衷心感谢您的访问。"
   },
   "privacyTitle": {
     "ko": "개인정보처리방침",
@@ -115,9 +195,14 @@ const translations = {
     "zh": "隐私政策"
   },
   "privacyIntro": {
-    "ko": "저희는 귀하의 개인정보를 중요하게 생각합니다. NUMÉRO 45의 정책은 저희 웹사이트에서 수집할 수 있는 모든 정보와 관련하여 귀하의 개인정보를 존중하는 것입니다.",
-    "en": "Your privacy is important to us. It is NUMÉRO 45's policy to respect your privacy regarding any information we may collect from you across our website.",
-    "zh": "您的隐私对我们很重要。NUMÉRO 45的政策是尊重您在我们网站上可能收集的任何信息的隐私。"
+    "ko": "NUMÉRO 45는 이용자의 개인정보를 소중하게 생각합니다.",
+    "en": "NUMÉRO 45 values the privacy of its users.",
+    "zh": "NUMÉRO 45重视用户的个人隐私。"
+  },
+  "privacyIntro2": {
+    "ko": "본 개인정보처리방침은 NUMÉRO 45 웹사이트 이용 과정에서 수집될 수 있는 모든 정보에 대해, 어떠한 기준과 방식으로 처리되는지를 설명합니다.",
+    "en": "This Privacy Policy explains how all information that may be collected during your use of the NUMÉRO 45 website is processed, including the standards and methods applied.",
+    "zh": "本隐私政策说明了在使用NUMÉRO 45网站过程中可能收集的所有信息的处理标准和方式。"
   },
   "privacySection1Title": {
     "ko": "1. 수집하는 정보",
@@ -125,24 +210,24 @@ const translations = {
     "zh": "1. 我们收集的信息"
   },
   "privacySection1P1": {
-    "ko": "저희는 귀하에게 서비스를 제공하기 위해 진정으로 필요할 때만 개인 정보를 요청합니다. 저희는 귀하의 인지와 동의 하에 공정하고 합법적인 수단으로 정보를 수집합니다. 또한 수집 이유와 사용 방식에 대해서도 알려드립니다.",
-    "en": "We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.",
-    "zh": "我们只在真正需要为您提供服务时才要求提供个人信息。我们通过公平合法的手段，在您知情和同意的情况下收集信息。我们还会告知您收集信息的原因和使用方式。"
+    "ko": "저희는 서비스 제공에 꼭 필요한 경우에만 최소한의 개인정보를 요청합니다. 모든 정보는 이용자의 인지와 동의를 바탕으로, 합법적이고 공정한 방법으로 수집됩니다. 또한 개인정보를 수집하는 목적과 사용 방법을 명확히 안내드립니다.",
+    "en": "We only request the minimum personal information necessary for providing our services. All information is collected through lawful and fair means, based on the user's awareness and consent. We also clearly inform you of the purpose and method of use.",
+    "zh": "我们仅在提供服务确实需要时才请求最少的个人信息。所有信息都是在用户知情和同意的基础上，通过合法公平的方式收集的。我们还会明确告知收集目的和使用方式。"
   },
   "privacySection1P2": {
-    "ko": "저희는 요청된 서비스를 제공하는 데 필요한 기간 동안만 수집된 정보를 보유합니다. 저희가 저장하는 데이터는 손실 및 도난은 물론 무단 접근, 공개, 복사, 사용 또는 수정을 방지하기 위해 상업적으로 허용되는 수단 내에서 보호할 것입니다.",
-    "en": "We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.",
-    "zh": "我们只会在提供您所需服务的必要时间内保留收集到的信息。我们存储的数据将在商业上可接受的范围内受到保护，以防止丢失和盗窃，以及未经授权的访问、披露、复制、使用或修改。"
+    "ko": "수집된 정보는 요청하신 서비스를 제공하는 데 필요한 기간 동안만 보관되며, 보관 중인 개인정보는 분실, 도난, 무단 접근, 공개, 변경 등을 방지하기 위해 상업적으로 합리적인 보안 조치를 통해 보호됩니다.",
+    "en": "Collected information is retained only for the period necessary to provide the requested service. Stored personal information is protected through commercially reasonable security measures to prevent loss, theft, unauthorized access, disclosure, or alteration.",
+    "zh": "收集的信息仅在提供所请求服务所需的期间内保留。存储的个人信息通过商业上合理的安全措施加以保护，以防止丢失、被盗、未经授权的访问、披露或更改。"
   },
   "privacySection2Title": {
-    "ko": "2. 쿠키",
-    "en": "2. Cookies",
-    "zh": "2. Cookies"
+    "ko": "2. 쿠키 사용",
+    "en": "2. Use of Cookies",
+    "zh": "2. Cookie的使用"
   },
   "privacySection2P1": {
-    "ko": "저희는 사이트 경험을 개선하기 위해 쿠키를 사용합니다. 저희 사이트를 사용함으로써 귀하는 쿠키 사용에 동의하는 것입니다.",
-    "en": "We use cookies to improve your experience on our site. By using our site, you consent to our use of cookies.",
-    "zh": "我们使用cookies来改善您在我们网站上的体验。通过使用您的网站，您同意我们使用cookies。"
+    "ko": "NUMÉRO 45는 더 나은 서비스 경험을 제공하기 위해 쿠키를 사용할 수 있습니다. 웹사이트를 계속 이용하실 경우, 쿠키 사용에 동의한 것으로 간주됩니다.",
+    "en": "NUMÉRO 45 may use cookies to provide a better service experience. By continuing to use the website, you are deemed to have consented to the use of cookies.",
+    "zh": "NUMÉRO 45可能会使用Cookie来提供更好的服务体验。继续使用本网站即视为您同意使用Cookie。"
   },
   "privacySection3Title": {
     "ko": "3. 구글 애드센스",
@@ -150,38 +235,43 @@ const translations = {
     "zh": "3. Google AdSense"
   },
   "privacySection3P1": {
-    "ko": "저희는 광고를 제공하기 위해 구글 애드센스를 사용합니다. 구글의 DART 쿠키 사용은 저희 사이트 및 인터넷의 다른 사이트 방문을 기반으로 사용자에게 광고를 제공할 수 있게 합니다. 사용자는 구글 광고 및 콘텐츠 네트워크 개인정보처리방침을 방문하여 DART 쿠키 사용을 거부할 수 있습니다.",
-    "en": "We use Google AdSense to serve advertisements. Google's use of the DART cookie enables it to serve ads to our users based on their visit to our sites and other sites on the Internet. Users may opt out of the use of the DART cookie by visiting the Google ad and content network privacy policy.",
-    "zh": "我们使用Google AdSense投放广告。Google使用DART cookie，使其能够根据用户访问我们网站和互联网上其他网站的情况向用户投放广告。用户可以通过访问Google广告和内容网络隐私政策来选择退出DART cookie的使用。"
+    "ko": "본 사이트는 광고 제공을 위해 Google AdSense를 사용합니다. 구글은 DART 쿠키를 통해 이용자의 사이트 방문 이력 및 인터넷상의 다른 웹사이트 이용 정보를 기반으로 맞춤형 광고를 제공할 수 있습니다.",
+    "en": "This site uses Google AdSense to serve advertisements. Google may use the DART cookie to serve personalized ads based on your visit history to this site and other websites on the Internet.",
+    "zh": "本网站使用Google AdSense提供广告。Google可能通过DART Cookie根据您访问本网站和互联网上其他网站的记录投放个性化广告。"
+  },
+  "privacySection3P2": {
+    "ko": "이용자는 Google 광고 및 콘텐츠 네트워크의 개인정보처리방침을 통해 DART 쿠키 사용을 거부할 수 있습니다.",
+    "en": "Users may opt out of the use of the DART cookie by visiting the Google Ads and Content Network Privacy Policy.",
+    "zh": "用户可以通过访问Google广告和内容网络隐私政策来选择退出DART Cookie的使用。"
   },
   "privacySection4Title": {
-    "ko": "4. 다른 사이트로의 링크",
-    "en": "4. Links to Other Sites",
-    "zh": "4. 其他网站链接"
+    "ko": "4. 외부 사이트 링크",
+    "en": "4. Links to External Sites",
+    "zh": "4. 外部网站链接"
   },
   "privacySection4P1": {
-    "ko": "저희 웹사이트는 저희가 운영하지 않는 외부 사이트로 연결될 수 있습니다. 저희는 이러한 사이트의 콘텐츠와 관행에 대해 통제할 수 없으며, 각 개인정보처리방침에 대해 책임을 지거나 책임질 수 없다는 점을 인지하시기 바랍니다.",
-    "en": "Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.",
-    "zh": "我们的网站可能链接到不由我们运营的外部网站。请注意，我们对这些网站的内容和做法没有控制权，也无法对其各自的隐私政策承担责任。"
+    "ko": "NUMÉRO 45 웹사이트에는 저희가 운영하지 않는 외부 사이트로 연결되는 링크가 포함될 수 있습니다. 이러한 외부 사이트의 콘텐츠나 개인정보 처리 방식에 대해서는 저희가 통제하거나 책임을 지지 않는다는 점을 양해해 주시기 바랍니다. 각 사이트의 개인정보처리방침을 별도로 확인하시기를 권장드립니다.",
+    "en": "The NUMÉRO 45 website may contain links to external sites that we do not operate. Please understand that we have no control over or responsibility for the content or privacy practices of these external sites. We recommend reviewing each site's privacy policy separately.",
+    "zh": "NUMÉRO 45网站可能包含我们不运营的外部网站链接。请理解，我们对这些外部网站的内容或隐私处理方式不承担控制或责任。建议您单独查看各网站的隐私政策。"
   },
   "privacySection5Title": {
     "ko": "5. 개인정보처리방침 변경",
-    "en": "5. Changes to Our Privacy Policy",
+    "en": "5. Changes to Privacy Policy",
     "zh": "5. 隐私政策变更"
   },
   "privacySection5P1": {
-    "ko": "저희는 때때로 개인정보처리방침을 업데이트할 수 있습니다. 변경 사항이 있을 경우 이 페이지에 새로운 개인정보처리방침을 게시하여 알려드립니다. 변경 사항이 있는지 정기적으로 이 개인정보처리방침을 검토하는 것이 좋습니다.",
-    "en": "We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.",
-    "zh": "我们可能会不时更新我们的隐私政策。如有任何更改，我们将在本页面发布新的隐私政策通知您。建议您定期查阅本隐私政策以了解任何更改。"
+    "ko": "본 개인정보처리방침은 필요에 따라 수정될 수 있으며, 변경 사항이 있을 경우 해당 페이지를 통해 공지됩니다. 최신 내용을 확인하시기 위해 정기적으로 본 방침을 확인해 주시기 바랍니다.",
+    "en": "This Privacy Policy may be revised as needed, and any changes will be announced through this page. We recommend reviewing this policy periodically to stay informed of the latest updates.",
+    "zh": "本隐私政策可能会根据需要进行修订，如有变更将通过本页面公告。建议您定期查阅本政策以了解最新内容。"
   },
   "privacyContactTitle": {
-    "ko": "문의하기",
-    "en": "Contact Us",
-    "zh": "联系我们"
+    "ko": "문의",
+    "en": "Contact",
+    "zh": "联系方式"
   },
   "privacyContactP1": {
-    "ko": "개인정보처리방침에 대해 질문이 있으시면 저희에게 연락주세요.",
-    "en": "If you have any questions about our Privacy Policy, please contact us.",
-    "zh": "如果您对我们的隐私政策有任何疑问，请联系我们。"
+    "ko": "개인정보처리방침과 관련하여 궁금한 점이 있으시면 언제든지 문의해 주세요.",
+    "en": "If you have any questions regarding our Privacy Policy, please feel free to contact us at any time.",
+    "zh": "如果您对隐私政策有任何疑问，请随时与我们联系。"
   }
 };

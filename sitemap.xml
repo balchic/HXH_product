@@ -1,25 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://your-domain.com/index.html</loc>
+    <loc>https://hxh-product.pages.dev/</loc>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://hxh-product.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hxh-product.pages.dev/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://hxh-product.pages.dev/"/>
     <lastmod>2026-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://your-domain.com/articles.html</loc>
+    <loc>https://hxh-product.pages.dev/articles.html</loc>
     <lastmod>2026-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://your-domain.com/about.html</loc>
+    <loc>https://hxh-product.pages.dev/article-1.html</loc>
     <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-    <url>
-    <loc>https://your-domain.com/privacy.html</loc>
+  <url>
+    <loc>https://hxh-product.pages.dev/article-2.html</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hxh-product.pages.dev/article-3.html</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hxh-product.pages.dev/about.html</loc>
+    <lastmod>2026-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://hxh-product.pages.dev/privacy.html</loc>
     <lastmod>2026-01-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

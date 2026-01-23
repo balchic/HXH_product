@@ -1,3 +1,6 @@
 # Allow all user-agents to crawl the entire site.
 User-agent: *
 Allow: /
+
+# Sitemap location
+Sitemap: https://hxh-product.pages.dev/sitemap.xml
