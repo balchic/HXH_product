@@ -1,63 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>감사합니다 - HxH ARCHIVE</title>
+    <meta name="robots" content="noindex, nofollow"> <!-- 이 페이지는 검색 결과에 표시할 필요가 없습니다. -->
     <link rel="stylesheet" href="style.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YM1E0SDTH6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YM1E0SDTH6');
-</script>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "v54threued");
-</script>
-<link rel="icon" href="Favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="articles.html">Articles</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="privacy.html">Privacy</a></li>
-            </ul>
-        </nav>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">HxH ARCHIVE</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="articles.html">아티클</a></li>
+                    <li><a href="about.html">소개</a></li>
+                    <li><a href="contact.html">문의</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="contact-section">
-            <h1>Affiliation Inquiry</h1>
-            <p>If you have any questions or would like to discuss a partnership, please fill out the form below.</p>
-            
-            <form action="https://formspree.io/f/mreeawl" method="POST" class="formspree-form">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="8" required></textarea>
-                
-                <button type="submit">Send Inquiry</button>
-            </form>
-        </section>
+        <div class="container">
+            <section class="card" style="text-align: center;">
+                <h1>메시지를 보내주셔서 감사합니다!</h1>
+                <p>보내주신 내용은 잘 확인하였으며, 필요한 경우 빠른 시일 내에 회신 드리겠습니다.</p>
+                <p>언제나 HxH ARCHIVE에 관심을 가져주셔서 진심으로 감사합니다.</p>
+                <a href="index.html" class="btn" style="margin-top: 2rem;">홈으로 돌아가기</a>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Your Company. All rights reserved.</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 HxH ARCHIVE. All rights reserved.</p>
+        <p>본 사이트는 팬이 운영하는 비공식 정보 사이트이며, 모든 저작권은 원작자 및 관련 회사에 있습니다.</p>
+        <p><a href="privacy.html">개인정보처리방침</a></p>
     </footer>
+
 </body>
 </html>
