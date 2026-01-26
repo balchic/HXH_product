@@ -273,5 +273,145 @@ const translations = {
     "ko": "개인정보처리방침과 관련하여 궁금한 점이 있으시면 언제든지 문의해 주세요.",
     "en": "If you have any questions regarding our Privacy Policy, please feel free to contact us at any time.",
     "zh": "如果您对隐私政策有任何疑问，请随时与我们联系。"
+  },
+  "art1Title": {
+    "ko": "로또의 역사",
+    "en": "The History of the Lottery",
+    "zh": "彩票的历史"
+  },
+  "art1P1": {
+    "ko": "복권의 역사는 고대 문명까지 거슬러 올라갑니다. 기원전 205년경 중국 한나라 시대에 만리장성 건설 자금을 마련하기 위해 '키노'라는 복권 게임이 시작된 것으로 알려져 있습니다. 이 게임은 오늘날 복권의 원형으로 여겨집니다.",
+    "en": "The history of lotteries dates back to ancient civilizations. Around 205 BC, during China's Han Dynasty, a lottery game called 'Keno' was reportedly started to fund the construction of the Great Wall of China. This game is considered the prototype of today's lottery.",
+    "zh": "彩票的历史可以追溯到古代文明。据说大约公元前205年，在中国汉朝时期，为了筹集修建长城的资金，开始了一种叫做「基诺」的彩票游戏。这个游戏被认为是现代彩票的原型。"
+  },
+  "art1P2": {
+    "ko": "유럽에서는 15세기경 네덜란드와 벨기에 지역에서 현대적 형태의 복권이 등장했습니다. 당시 복권은 도시 방어 시설 건설이나 빈민 구제 등 공공 목적을 위한 자금 조달 수단으로 사용되었습니다. '로또(Lotto)'라는 용어도 이탈리아어에서 유래했습니다.",
+    "en": "In Europe, modern forms of lottery emerged around the 15th century in the Netherlands and Belgium regions. At that time, lotteries were used as a means of raising funds for public purposes such as building city defenses or providing relief to the poor. The term 'Lotto' also originated from Italian.",
+    "zh": "在欧洲，现代形式的彩票大约在15世纪出现在荷兰和比利时地区。当时，彩票被用作为城市防御建设或救济穷人等公共目的筹集资金的手段。「Lotto」这个词也源自意大利语。"
+  },
+  "art1P3": {
+    "ko": "한국에서는 2002년 12월 첫 로또 6/45 추첨이 시작되었습니다. 1부터 45까지의 숫자 중 6개를 선택하는 방식으로, 매주 토요일 저녁에 추첨이 진행됩니다. 한국 로또는 출시 이후 큰 인기를 얻으며 국민적인 오락으로 자리잡았습니다.",
+    "en": "In Korea, the first Lotto 6/45 draw began in December 2002. Players select 6 numbers from 1 to 45, with draws held every Saturday evening. Korean Lotto has gained immense popularity since its launch and has become a national pastime.",
+    "zh": "在韩国，第一次乐透6/45抽奖始于2002年12月。玩家从1到45的数字中选择6个号码，每周六晚进行抽奖。韩国乐透自推出以来获得了极大的人气，已成为全民娱乐活动。"
+  },
+  "art1P4": {
+    "ko": "로또의 매력은 적은 금액으로 인생을 바꿀 수 있는 큰 당첨금에 대한 희망에 있습니다. 하지만 1등 당첨 확률이 약 814만분의 1이라는 점을 기억하고, 항상 책임감 있게 즐기는 것이 중요합니다.",
+    "en": "The allure of the lottery lies in the hope of winning life-changing prizes with a small investment. However, it's important to remember that the odds of winning the jackpot are approximately 1 in 8.14 million, and to always play responsibly.",
+    "zh": "彩票的魅力在于以小额投资赢取改变人生奖金的希望。但是，重要的是要记住头奖的中奖概率约为814万分之一，并始终负责任地参与。"
+  },
+  "art1P5": {
+    "ko": "오늘날 복권은 전 세계적으로 수십억 달러 규모의 산업으로 성장했습니다. 많은 국가에서 복권 수익금의 일부를 교육, 문화, 복지 등 공익 사업에 사용하고 있어, 복권은 단순한 도박을 넘어 사회에 기여하는 역할도 담당하고 있습니다.",
+    "en": "Today, lotteries have grown into a multi-billion dollar industry worldwide. Many countries use a portion of lottery proceeds for public benefit projects such as education, culture, and welfare, so lotteries play a role in contributing to society beyond simple gambling.",
+    "zh": "如今，彩票已发展成为全球数十亿美元规模的产业。许多国家将部分彩票收入用于教育、文化、福利等公益事业，因此彩票不仅仅是简单的赌博，还承担着为社会做贡献的角色。"
+  },
+  "art2Title": {
+    "ko": "번호 선택 전략",
+    "en": "Strategies for Choosing Numbers",
+    "zh": "选号策略"
+  },
+  "art2Disclaimer": {
+    "ko": "※ 주의: 로또는 완전한 무작위 추첨이므로 어떤 전략도 당첨 확률을 높일 수 없습니다. 아래 내용은 오락 목적으로만 제공됩니다.",
+    "en": "※ Note: The lottery is a completely random draw, so no strategy can increase your chances of winning. The following content is provided for entertainment purposes only.",
+    "zh": "※ 注意：彩票是完全随机抽奖，任何策略都无法提高中奖概率。以下内容仅供娱乐目的。"
+  },
+  "art2H1": {
+    "ko": "1. 균형 잡힌 번호 선택",
+    "en": "1. Balanced Number Selection",
+    "zh": "1. 均衡选号"
+  },
+  "art2S1P1": {
+    "ko": "일부 플레이어들은 낮은 숫자(1-22)와 높은 숫자(23-45)를 균형 있게 섞어 선택합니다. 또한 홀수와 짝수의 비율을 3:3이나 4:2로 맞추는 방법을 선호하기도 합니다.",
+    "en": "Some players prefer to mix low numbers (1-22) and high numbers (23-45) in a balanced way. They also favor maintaining an odd-to-even ratio of 3:3 or 4:2.",
+    "zh": "一些玩家喜欢均衡地混合低号码（1-22）和高号码（23-45）。他们还倾向于保持3:3或4:2的奇偶比例。"
+  },
+  "art2S1P2": {
+    "ko": "하지만 기억하세요: 로또 기계는 이러한 패턴을 인식하지 않습니다. 모든 조합은 동일한 확률을 가집니다.",
+    "en": "But remember: the lottery machine doesn't recognize these patterns. All combinations have equal probability.",
+    "zh": "但请记住：彩票机器不会识别这些模式。所有组合具有相同的概率。"
+  },
+  "art2H2": {
+    "ko": "2. 생일 번호 피하기",
+    "en": "2. Avoiding Birthday Numbers",
+    "zh": "2. 避免生日号码"
+  },
+  "art2S2P1": {
+    "ko": "많은 사람들이 생일이나 기념일(1-31)을 기반으로 번호를 선택합니다. 따라서 32-45 범위의 숫자가 포함된 조합이 당첨되면 상금을 나눠야 할 사람이 적을 수 있습니다. 하지만 이것은 당첨 확률을 높이는 것이 아니라 잠재적 상금 분배에만 영향을 미칩니다.",
+    "en": "Many people choose numbers based on birthdays or anniversaries (1-31). Therefore, if a combination including numbers in the 32-45 range wins, there may be fewer people to share the prize with. However, this doesn't increase your chances of winning; it only affects potential prize distribution.",
+    "zh": "很多人根据生日或纪念日（1-31）选择号码。因此，如果包含32-45范围号码的组合中奖，可能需要分享奖金的人会更少。但这不会提高中奖概率，只会影响潜在的奖金分配。"
+  },
+  "art2H3": {
+    "ko": "3. 퀵픽(자동 선택) vs 수동 선택",
+    "en": "3. Quick Pick vs Manual Selection",
+    "zh": "3. 快速选号 vs 手动选号"
+  },
+  "art2S3P1": {
+    "ko": "통계적으로 자동 선택(퀵픽)과 수동 선택 사이에 당첨 확률 차이는 없습니다. 많은 대박 당첨자들이 퀵픽을 사용했지만, 이는 단순히 더 많은 사람들이 퀵픽을 사용하기 때문입니다.",
+    "en": "Statistically, there's no difference in winning probability between quick pick and manual selection. Many jackpot winners have used quick pick, but this is simply because more people use quick pick.",
+    "zh": "从统计学上讲，快速选号和手动选号在中奖概率上没有差异。很多大奖得主使用了快速选号，但这仅仅是因为更多人使用快速选号。"
+  },
+  "art2S3P2": {
+    "ko": "NUMÉRO 45의 번호 생성기도 컴퓨터 알고리즘을 사용한 무작위 선택이므로, 퀵픽과 동일한 원리로 작동합니다.",
+    "en": "NUMÉRO 45's number generator also works on the same principle as quick pick, using computer algorithms for random selection.",
+    "zh": "NUMÉRO 45的号码生成器也使用计算机算法进行随机选择，其原理与快速选号相同。"
+  },
+  "art2H4": {
+    "ko": "4. 가장 중요한 전략",
+    "en": "4. The Most Important Strategy",
+    "zh": "4. 最重要的策略"
+  },
+  "art2S4P1": {
+    "ko": "로또에서 가장 중요한 '전략'은 자신이 잃어도 괜찮은 금액만 사용하는 것입니다. 로또는 재미를 위한 오락이지, 재정적 투자가 아닙니다.",
+    "en": "The most important 'strategy' in the lottery is to only spend what you can afford to lose. The lottery is entertainment for fun, not a financial investment.",
+    "zh": "彩票中最重要的「策略」是只使用您输得起的金额。彩票是为了娱乐，而不是财务投资。"
+  },
+  "art2S4P2": {
+    "ko": "NUMÉRO 45는 번호 선택의 재미를 더해줄 뿐, 어떤 전략이나 시스템도 로또 당첨을 보장할 수 없다는 점을 기억해 주세요.",
+    "en": "Remember that NUMÉRO 45 only adds to the fun of choosing numbers; no strategy or system can guarantee winning the lottery.",
+    "zh": "请记住，NUMÉRO 45只是增加选号的乐趣，任何策略或系统都无法保证彩票中奖。"
+  },
+  "art3Title": {
+    "ko": "로또 확률 이해하기",
+    "en": "Understanding Lottery Odds",
+    "zh": "了解彩票赔率"
+  },
+  "art3P1": {
+    "ko": "한국 로또 6/45에서 1등에 당첨될 확률은 8,145,060분의 1입니다. 이 숫자가 어느 정도인지 이해하기 위해 몇 가지 비교를 해보겠습니다.",
+    "en": "The odds of winning the jackpot in Korean Lotto 6/45 are 1 in 8,145,060. To understand how significant this number is, let's make some comparisons.",
+    "zh": "韩国乐透6/45中头奖的概率为8,145,060分之一。为了理解这个数字有多大，让我们做一些比较。"
+  },
+  "art3P2": {
+    "ko": "로또 1등 당첨 확률은 벼락에 맞을 확률(약 100만분의 1)보다 약 8배 낮습니다. 또한 비행기 사고를 당할 확률(약 1,100만분의 1)과 비슷한 수준입니다.",
+    "en": "The odds of winning the lottery jackpot are about 8 times lower than the odds of being struck by lightning (about 1 in 1 million). It's also similar to the odds of being in a plane crash (about 1 in 11 million).",
+    "zh": "中彩票头奖的概率比被闪电击中的概率（约100万分之一）低约8倍。这也与飞机失事的概率（约1100万分之一）相近。"
+  },
+  "art3P3": {
+    "ko": "로또의 각 등급별 당첨 확률은 다음과 같습니다: 1등(6개 번호 일치)은 8,145,060분의 1, 2등(5개 + 보너스)은 1,357,510분의 1, 3등(5개 일치)은 35,724분의 1입니다.",
+    "en": "The winning odds for each prize tier are: 1st prize (6 numbers match) is 1 in 8,145,060, 2nd prize (5 + bonus) is 1 in 1,357,510, and 3rd prize (5 numbers match) is 1 in 35,724.",
+    "zh": "各奖项等级的中奖概率如下：一等奖（6个号码匹配）为8,145,060分之一，二等奖（5个+奖励号码）为1,357,510分之一，三等奖（5个号码匹配）为35,724分之一。"
+  },
+  "art3P4": {
+    "ko": "4등(4개 일치)은 733분의 1, 5등(3개 일치)은 45분의 1의 확률입니다. 어떤 등수라도 당첨될 전체 확률은 약 28분의 1입니다.",
+    "en": "4th prize (4 numbers match) has odds of 1 in 733, and 5th prize (3 numbers match) has odds of 1 in 45. The overall odds of winning any prize are about 1 in 28.",
+    "zh": "四等奖（4个号码匹配）的概率为733分之一，五等奖（3个号码匹配）的概率为45分之一。赢得任何奖项的总体概率约为28分之一。"
+  },
+  "art3P5": {
+    "ko": "이 확률은 어떻게 계산될까요? 45개 숫자 중 6개를 선택하는 조합의 수는 수학적으로 C(45,6) = 45!/(6!×39!) = 8,145,060가지입니다.",
+    "en": "How are these odds calculated? The number of combinations for choosing 6 numbers from 45 is mathematically C(45,6) = 45!/(6!×39!) = 8,145,060 combinations.",
+    "zh": "这些概率是如何计算的？从45个数字中选择6个的组合数在数学上是C(45,6) = 45!/(6!×39!) = 8,145,060种组合。"
+  },
+  "art3P6": {
+    "ko": "중요한 점은, 매번 추첨은 독립적인 사건이라는 것입니다. 이전에 어떤 번호가 나왔든, 다음 추첨에서 각 조합이 나올 확률은 동일합니다. '오랫동안 안 나온 번호가 나올 차례'라는 생각은 수학적으로 잘못된 것입니다.",
+    "en": "An important point is that each draw is an independent event. Regardless of which numbers came up before, the probability of each combination appearing in the next draw is the same. The idea that 'numbers that haven't appeared for a long time are due' is mathematically incorrect.",
+    "zh": "重要的一点是，每次抽奖都是独立事件。无论之前出现了什么号码，下一次抽奖中每个组合出现的概率都是相同的。「长时间未出现的号码该出现了」这种想法在数学上是错误的。"
+  },
+  "art3P7": {
+    "ko": "또한 1, 2, 3, 4, 5, 6과 같은 연속 번호 조합은 7, 14, 23, 31, 38, 42와 같은 무작위해 보이는 조합과 정확히 같은 당첨 확률을 가집니다.",
+    "en": "Also, a consecutive number combination like 1, 2, 3, 4, 5, 6 has exactly the same winning probability as a seemingly random combination like 7, 14, 23, 31, 38, 42.",
+    "zh": "此外，像1、2、3、4、5、6这样的连续号码组合与7、14、23、31、38、42这样看似随机的组合具有完全相同的中奖概率。"
+  },
+  "art3P8": {
+    "ko": "결론적으로, 로또는 순수한 운의 게임입니다. 확률을 이해하면 비현실적인 기대 없이 로또를 즐길 수 있습니다. NUMÉRO 45와 함께 재미있게 번호를 생성하되, 항상 책임감 있게 즐겨주세요!",
+    "en": "In conclusion, the lottery is a game of pure chance. Understanding the odds helps you enjoy the lottery without unrealistic expectations. Have fun generating numbers with NUMÉRO 45, but always play responsibly!",
+    "zh": "总之，彩票是一种纯粹的机会游戏。了解概率可以帮助您在没有不切实际期望的情况下享受彩票。使用NUMÉRO 45愉快地生成号码，但请始终负责任地参与！"
   }
 };
