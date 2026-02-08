@@ -6,12 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const chatbotInput = document.getElementById('chatbot-input');
   const chatbotSendBtn = document.getElementById('chatbot-send');
 
-  // Load chatbot HTML
-  fetch('chatbot.html')
-    .then(response => response.text())
-    .then(data => {
-      document.body.innerHTML += data;
-    });
+
 
   openChatbotBtn.addEventListener('click', () => {
     chatbotContainer.style.display = 'flex';
