@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="chatbot.css">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="Favicon.ico" type="image/x-icon">
 </head>
@@ -48,6 +49,22 @@
 
   <footer class="footer" data-i18n-key="footerText">© NUMÉRO 45</footer>
 </div>
+
+<div id="chatbot-container" style="display: none;">
+  <div id="chatbot-header">
+    <span>AI 챗봇</span>
+    <button id="close-chatbot">X</button>
+  </div>
+  <div id="chatbot-messages"></div>
+  <div id="chatbot-input-container">
+    <input type="text" id="chatbot-input" placeholder="메시지를 입력하세요...">
+    <button id="chatbot-send">전송</button>
+  </div>
+</div>
+<button id="open-chatbot">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+</button>
+<script src="chatbot.js"></script>
 <script src="translations.js"></script>
 <script src="app.js"></script>
 </body>
