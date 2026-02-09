@@ -176,7 +176,9 @@
       <div class="dream-input-container">
         <input type="text" id="dreamKeyword" data-i18n-key="dreamPlaceholder" placeholder="꿈 속 상징을 입력하세요...">
         <button id="dreamBtn" data-i18n-key="dreamButton">번호 확인</button>
+        <button type="button" id="dream-keyword-list-btn">?</button>
       </div>
+      <div id="dream-keyword-list" class="keyword-list"></div>
       <div id="dreamResult" class="lotto-row" aria-live="polite"></div>
     </section>
 
@@ -398,6 +400,44 @@ dreamKeywordInput.addEventListener('keypress', (e) => {
         findDreamNumbers();
     }
 });
+
+const dreamKeywordListBtn = document.getElementById('dream-keyword-list-btn');
+const dreamKeywordList = document.getElementById('dream-keyword-list');
+
+function populateAndShowKeywords() {
+    const currentLang = document.documentElement.lang || 'ko';
+    dreamKeywordList.innerHTML = ''; // Clear existing
+
+    const titleText = {
+        'ko': '사용 가능한 키워드',
+        'en': 'Available Keywords',
+        'zh': '可用关键词'
+    };
+
+    const title = document.createElement('h4');
+    title.textContent = titleText[currentLang];
+    dreamKeywordList.appendChild(title);
+
+    const ul = document.createElement('ul');
+    for (const key in dreamData) {
+        const dream = dreamData[key];
+        const localizedKeyword = dream.keywords[currentLang];
+        if(localizedKeyword) {
+            const li = document.createElement('li');
+            li.textContent = localizedKeyword;
+            ul.appendChild(li);
+        }
+    }
+    dreamKeywordList.appendChild(ul);
+    dreamKeywordList.classList.add('visible');
+}
+
+function hideKeywords() {
+    dreamKeywordList.classList.remove('visible');
+}
+
+dreamKeywordListBtn.addEventListener('mouseenter', populateAndShowKeywords);
+dreamKeywordListBtn.addEventListener('mouseleave', hideKeywords);
 </script>
 </body>
 </html>
