@@ -443,8 +443,10 @@ body.light .chart-container {
 .bar-container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end; /* Align content (bar, label) to the bottom */
   align-items: center;
   width: 1.5%;
+  height: 100%; /* Make the container take full height */
 }
 
 .bar {
