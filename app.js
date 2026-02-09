@@ -1,5 +1,7 @@
-const savedLanguage = localStorage.getItem('language') || 'ko';
-setLanguage(savedLanguage);
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLanguage = localStorage.getItem('language') || 'ko';
+    setLanguage(savedLanguage);
+});
 
 function setLanguage(lang) {
   const elements = document.querySelectorAll('[data-i18n-key]');
