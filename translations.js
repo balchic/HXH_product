@@ -420,9 +420,14 @@ const translations = {
     "zh": "昨夜的梦，幸运号码是？"
   },
   "dreamInterpretationDesc": {
-    "ko": "돼지, 용, 조상, 불 등 꿈에서 본 상징을 입력하고 행운의 번호를 확인해보세요.",
-    "en": "Enter symbols from your dream like pig, dragon, ancestor, fire and check your lucky numbers.",
-    "zh": "输入你梦中的象征，如猪、龙、祖先、火，查询你的幸运号码。"
+    "ko": "돼지, 용, 물고기, 금 등 꿈에서 본 상징을 입력하고 행운의 번호를 확인해보세요.",
+    "en": "Enter symbols from your dream like pig, dragon, fish, gold and check your lucky numbers.",
+    "zh": "输入你梦中的象征，如猪、龙、鱼、金，查询你的幸运号码。"
+  },
+  "dreamPlaceholder": {
+    "ko": "꿈 속 상징을 입력하세요...",
+    "en": "Enter a symbol from your dream...",
+    "zh": "输入你梦中的象征..."
   },
   "dreamButton": {
     "ko": "번호 확인",
