@@ -413,5 +413,20 @@ const translations = {
     "ko": "결론적으로, 로또는 순수한 운의 게임입니다. 확률을 이해하면 비현실적인 기대 없이 로또를 즐길 수 있습니다. NUMÉRO 45와 함께 재미있게 번호를 생성하되, 항상 책임감 있게 즐겨주세요!",
     "en": "In conclusion, the lottery is a game of pure chance. Understanding the odds helps you enjoy the lottery without unrealistic expectations. Have fun generating numbers with NUMÉRO 45, but always play responsibly!",
     "zh": "总之，彩票是一种纯粹的机会游戏。了解概率可以帮助您在没有不切实际期望的情况下享受彩票。使用NUMÉRO 45愉快地生成号码，但请始终负责任地参与！"
+  },
+  "dreamInterpretationTitle": {
+    "ko": "간밤에 꾼 꿈, 행운의 번호는?",
+    "en": "Dream Last Night, Lucky Numbers?",
+    "zh": "昨夜的梦，幸运号码是？"
+  },
+  "dreamInterpretationDesc": {
+    "ko": "돼지, 용, 조상, 불 등 꿈에서 본 상징을 입력하고 행운의 번호를 확인해보세요.",
+    "en": "Enter symbols from your dream like pig, dragon, ancestor, fire and check your lucky numbers.",
+    "zh": "输入你梦中的象征，如猪、龙、祖先、火，查询你的幸运号码。"
+  },
+  "dreamButton": {
+    "ko": "번호 확인",
+    "en": "Check Numbers",
+    "zh": "查询号码"
   }
 };
