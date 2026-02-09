@@ -535,3 +535,10 @@ body.light .keyword-list li {
   background: #f0f0f0;
 }
 
+#dream-keyword-list-btn svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--accent);
+}
+
+

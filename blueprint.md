@@ -1,60 +1,34 @@
-# Blueprint: SEO Optimized NUMÉRO 45 (Lottery Number Generator)
+# Purpose and Capabilities
 
-## 1. Project Overview
+This project is a web-based application that provides a free lottery number generator for the Korean Lotto 6/45. It also includes a feature to recommend lottery numbers based on dream keywords. The application is designed with a clean and beautiful interface and supports multiple languages.
 
-This project aims to enhance the existing "NUMÉRO 45" lottery number generator website by applying SEO best practices based on Google and Naver guidelines, and by adding multi-language support.
+# Style, Design, and Features
 
-## 2. Core SEO Strategy
+## Initial Version
 
-- **Content:** The existing content will be enhanced with SEO considerations.
-- **Crawlability:** `robots.txt` and `sitemap.xml` will be created/updated.
-- **Metadata:** Unique `<title>`, `<meta name="description">`, `<link rel="canonical">`, and Open Graph/Twitter tags for each page.
-- **Semantic HTML:** Conversion of `div`-based layouts to semantic HTML5 tags (`<header>`, `<main>`, `<footer>`, `<section>`, `<article>`).
-- **Image Optimization:** Not directly applicable to the current content (uses emojis for buttons).
-- **Internal Linking:** Existing navigation will be maintained.
+-   **Lottery Number Generation:** Generates 5 sets of 6 random numbers and a bonus number.
+-   **Color-coded Numbers:** Numbers are color-coded based on the official Korean Lotto color scheme.
+-   **Dark/Light Mode:** Supports both dark and light color schemes.
+-   **Multi-language Support:** Supports Korean, English, and Chinese.
+-   **Responsive Design:** Optimized for both mobile and desktop devices.
+-   **SEO Content:** Includes sections on how to use the application, information about the Korean Lotto, and tips for choosing numbers.
 
-## 3. Design & User Experience (UX)
+## Current Version
 
-- **Visuals:** Existing clean design will be preserved.
-- **Responsiveness:** Existing responsive design will be maintained.
-- **Usability:** Improved with semantic HTML and multi-language support.
+-   **Dream Interpretation:** Recommends lottery numbers based on dream keywords.
+-   **Keyword List:** A list of available keywords is displayed when the user hovers over the keyword button.
+-   The keyword button has been updated from a "?" to a tag icon for better usability.
+-   The flickering issue on the keyword button has been resolved.
 
-## 4. Multi-language Support
+# Plan and Steps for the Current Change
 
-- **Languages:** Korean (ko), English (en), Chinese (zh).
-- **Implementation:**
-    - `translations.js`: A JavaScript file to store all translated text.
-    - `app.js`: A JavaScript file with logic to switch languages, update `data-i18n-key` elements, and persist language preference in `localStorage`.
-    - Language switcher buttons (`한국어`, `ENGLISH`, `中文`) added to the header of each page.
-    - `data-i18n-key` attributes added to all translatable text elements in HTML.
-
-## 5. Implementation Plan
-
-1.  **[completed]** **Analyze Existing Files:** Read `index.html`, `articles.html`, `about.html`, `privacy.html`, `style.css`.
-2.  **[completed]** **SEO Enhancement for `index.html`:**
-    *   Update `<head>` with descriptive title, meta description, canonical, OG/Twitter tags.
-    *   Convert `div`-based body structure to semantic HTML (`<header>`, `<main>`, `<section>`, `<footer>`).
-3.  **[completed]** **SEO Enhancement for `articles.html`:**
-    *   Update `<head>` with descriptive title, meta description, canonical, OG/Twitter tags.
-    *   Convert `div`-based body structure to semantic HTML (`<header>`, `<main>`, `<section>`, `<footer>`, `<article>`).
-4.  **[completed]** **SEO Enhancement for `about.html`:**
-    *   Update `<head>` with descriptive title, meta description, canonical, OG/Twitter tags.
-    *   Convert `div`-based body structure to semantic HTML (`<header>`, `<main>`, `<section>`, `<footer>`).
-5.  **[completed]** **SEO Enhancement for `privacy.html`:**
-    *   Update `<head>` with descriptive title, meta description, canonical, OG/Twitter tags.
-    *   Convert `div`-based body structure to semantic HTML (`<header>`, `<main>`, `<section>`, `<footer>`, `<article>`).
-6.  **[completed]** **Create `robots.txt`:** Allow all crawlers.
-7.  **[completed]** **Create `sitemap.xml`:** Include all HTML pages.
-8.  **[completed]** **Implement Multi-language Support:**
-    *   Add language switcher buttons to header of all HTML files.
-    *   Add `data-i18n-key` attributes to all translatable elements.
-    *   Create `translations.js` with all Korean, English, and Chinese translations.
-    *   Create `app.js` with language switching logic and `localStorage` persistence.
-    *   Add styling for language buttons in `style.css`.
-9.  **[completed]** **Update Korean Content for `about.html`:** Replace the descriptive text in `about.html` with the refined Korean content provided by the user.
-10. **[completed]** **Update Korean Content for `privacy.html`:** Replace the privacy policy text in `privacy.html` with the refined Korean content provided by the user.
-11. **[completed]** **Update Korean Content for `article-1.html`:** Replace the English content about "The History of the Lottery" with the Korean content "로또의 역사".
-12. **[completed]** **Update Korean Content for `article-2.html`:** Replace the English content about "Strategies for Choosing Numbers" with the Korean content "번호 선택 전략".
-13. **[completed]** **Update Korean Content for `article-3.html`:** Replace the English content about "Understanding Lottery Odds" with the Korean content "로또 당첨 확률 이해하기".
-14. **[completed]** **Ensure Article Title Visibility on Mobile:** Encapsulate `h1` titles in `article-*.html` within `<section class="card">` for consistent styling and improved mobile visibility.
-15. **[completed]** **Fix PC Display for Article Titles:** Adjust `style.css` to explicitly define color and margin for `h1` elements within `.card` sections, resolving visibility issues on PC.
+1.  **Investigate the flickering bug:**
+    *   Examine `index.html` to find the "해몽 키워드" button.
+    *   Analyze the related CSS in `style.css` to identify the `:hover` effect that might be causing the flicker.
+    *   Analyze the related JavaScript in `app.js` for any `mouseover`/`mouseout` event listeners that could be contributing to the problem.
+2.  **Propose a new design for the button:**
+    *   Instead of a "?", I will suggest a more intuitive icon, maybe a magnifying glass or a tag icon, to represent "keyword". I will search for a suitable SVG icon.
+3.  **Implement the fix and the new design:**
+    *   Modify the HTML to replace the "?" with the new icon.
+    *   Modify the CSS to fix the flickering issue and style the new icon.
+4.  **Update the blueprint.md file.**

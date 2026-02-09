@@ -176,7 +176,20 @@
       <div class="dream-input-container">
         <input type="text" id="dreamKeyword" data-i18n-key="dreamPlaceholder" placeholder="꿈 속 상징을 입력하세요...">
         <button id="dreamBtn" data-i18n-key="dreamButton">번호 확인</button>
-        <button type="button" id="dream-keyword-list-btn">?</button>
+        <button type="button" id="dream-keyword-list-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+            <line x1="7" y1="7" x2="7.01" y2="7" />
+          </svg>
+        </button>
       </div>
       <div id="dream-keyword-list" class="keyword-list"></div>
       <div id="dreamResult" class="lotto-row" aria-live="polite"></div>
@@ -308,6 +321,7 @@ async function draw(){
     row.appendChild(bonusLine);
 
     await sleep(300);
+.
   }
 
   document.getElementById("luckyNumber").textContent =
@@ -403,33 +417,37 @@ dreamKeywordInput.addEventListener('keypress', (e) => {
 
 const dreamKeywordListBtn = document.getElementById('dream-keyword-list-btn');
 const dreamKeywordList = document.getElementById('dream-keyword-list');
+let keywordsPopulated = false; // Add this flag
 
 function populateAndShowKeywords() {
-    const currentLang = document.documentElement.lang || 'ko';
-    dreamKeywordList.innerHTML = ''; // Clear existing
+  if (!keywordsPopulated) {
+    const currentLang = document.documentElement.lang || "ko";
+    dreamKeywordList.innerHTML = ""; // Clear existing
 
     const titleText = {
-        'ko': '사용 가능한 키워드',
-        'en': 'Available Keywords',
-        'zh': '可用关键词'
+      ko: "사용 가능한 키워드",
+      en: "Available Keywords",
+      zh: "可用关键词",
     };
 
-    const title = document.createElement('h4');
+    const title = document.createElement("h4");
     title.textContent = titleText[currentLang];
     dreamKeywordList.appendChild(title);
 
-    const ul = document.createElement('ul');
+    const ul = document.createElement("ul");
     for (const key in dreamData) {
-        const dream = dreamData[key];
-        const localizedKeyword = dream.keywords[currentLang];
-        if(localizedKeyword) {
-            const li = document.createElement('li');
-            li.textContent = localizedKeyword;
-            ul.appendChild(li);
-        }
+      const dream = dreamData[key];
+      const localizedKeyword = dream.keywords[currentLang];
+      if (localizedKeyword) {
+        const li = document.createElement("li");
+        li.textContent = localizedKeyword;
+        ul.appendChild(li);
+      }
     }
     dreamKeywordList.appendChild(ul);
-    dreamKeywordList.classList.add('visible');
+    keywordsPopulated = true; // Set flag to true
+  }
+  dreamKeywordList.classList.add("visible");
 }
 
 function hideKeywords() {
