@@ -412,3 +412,50 @@ body.light #dreamKeyword {
   margin-top: 16px;
 }
 
+/* Stats Page */
+.stats-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 16px;
+  color: var(--sub);
+  margin-bottom: 16px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+body.light .chart-container {
+  background: #f9f9f9;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1.5%;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+  transition: height 0.5s ease-out;
+}
+
+.bar-label {
+  font-size: 10px;
+  margin-top: 6px;
+  color: var(--sub);
+}
+

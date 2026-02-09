@@ -428,5 +428,40 @@ const translations = {
     "ko": "번호 확인",
     "en": "Check Numbers",
     "zh": "查询号码"
+  },
+  "navStats": {
+    "ko": "통계",
+    "en": "Stats",
+    "zh": "统计"
+  },
+  "statsTitle": {
+    "ko": "로또 번호 통계 분석",
+    "en": "Lottery Number Statistics",
+    "zh": "彩票号码统计分析"
+  },
+  "statsDesc": {
+    "ko": "최근 20회차 샘플 데이터를 기반으로 한 번호 출현 통계입니다. 전체 데이터가 아니므로 재미로만 참고해주세요.",
+    "en": "Number frequency statistics based on the last 20 sample draws. This is not complete data, so please use for entertainment only.",
+    "zh": "基于最近20期样本数据的号码出现频率统计。这不是完整数据，请仅供娱乐参考。"
+  },
+  "hotAndColdTitle": {
+    "ko": "Hot & Cold 번호",
+    "en": "Hot & Cold Numbers",
+    "zh": "热门和冷门号码"
+  },
+  "hotNumbers": {
+    "ko": "가장 많이 나온 번호 (Hot)",
+    "en": "Most Frequent Numbers (Hot)",
+    "zh": "最热门号码 (Hot)"
+  },
+  "coldNumbers": {
+    "ko": "가장 적게 나온 번호 (Cold)",
+    "en": "Least Frequent Numbers (Cold)",
+    "zh": "最冷门号码 (Cold)"
+  },
+  "frequencyChartTitle": {
+    "ko": "번호별 출현 빈도 차트",
+    "en": "Frequency Chart by Number",
+    "zh": "号码出现频率图表"
   }
 };

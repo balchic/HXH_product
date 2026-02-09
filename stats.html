@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>로또 번호 통계 분석 - NUMÉRO 45</title>
+<meta name="description" content="역대 로또 당첨 번호 통계를 분석하여 가장 많이 나온 번호, 가장 적게 나온 번호 등의 정보를 확인하세요.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="chatbot.css">
+<link rel="icon" href="Favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <div class="header-top">
+      <a href="index.html" class="logo" data-i18n-key="logo">NUMÉRO 45</a>
+      <div class="lang-switcher">
+        <button onclick="setLanguage('ko')" aria-label="한국어로 변경">한국어</button>
+        <button onclick="setLanguage('en')" aria-label="Switch to English">ENGLISH</button>
+        <button onclick="setLanguage('zh')" aria-label="切换到中文">中文</button>
+      </div>
+    </div>
+    <nav aria-label="주요 탐색">
+      <a href="index.html" data-i18n-key="navHome">홈</a>
+      <a href="articles.html" data-i18n-key="navArticles">아티클</a>
+      <a href="stats.html" class="active" data-i18n-key="navStats">통계</a>
+      <a href="about.html" data-i18n-key="navAbout">소개</a>
+      <a href="privacy.html" data-i18n-key="navPrivacy">개인정보처리방침</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h1 data-i18n-key="statsTitle">로또 번호 통계 분석</h1>
+      <p data-i18n-key="statsDesc">최근 20회차 샘플 데이터를 기반으로 한 번호 출현 통계입니다. 전체 데이터가 아니므로 재미로만 참고해주세요.</p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n-key="hotAndColdTitle">Hot & Cold 번호</h2>
+      <div class="stats-container">
+        <div class="stat-box">
+          <h3 data-i18n-key="hotNumbers">가장 많이 나온 번호 (Hot)</h3>
+          <div id="hot-numbers" class="balls"></div>
+        </div>
+        <div class="stat-box">
+          <h3 data-i18n-key="coldNumbers">가장 적게 나온 번호 (Cold)</h3>
+          <div id="cold-numbers" class="balls"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n-key="frequencyChartTitle">번호별 출현 빈도 차트</h2>
+      <div id="frequency-chart" class="chart-container"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n-key="footerText">© NUMÉRO 45</p>
+    <p class="footer-disclaimer" data-i18n-key="footerDisclaimer">본 서비스는 오락 목적으로만 제공됩니다. 로또 번호 생성 결과는 당첨을 보장하지 않습니다.</p>
+  </footer>
+</div>
+
+<div id="chatbot-container" style="display: none;">
+  <div id="chatbot-header">
+    <span>AI 챗봇</span>
+    <button id="close-chatbot">X</button>
+  </div>
+  <div id="chatbot-messages"></div>
+  <div id="chatbot-input-container">
+    <input type="text" id="chatbot-input" placeholder="메시지를 입력하세요...">
+    <button id="chatbot-send">전송</button>
+  </div>
+</div>
+<button id="open-chatbot"></button>
+<script src="chatbot.js"></script>
+<script src="translations.js"></script>
+<script src="stats.js"></script>
+<script src="app.js"></script> 
+</body>
+</html>
