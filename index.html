@@ -416,11 +416,12 @@ dreamKeywordInput.addEventListener('keypress', (e) => {
 
 const dreamKeywordListBtn = document.getElementById('dream-keyword-list-btn');
 const dreamKeywordList = document.getElementById('dream-keyword-list');
-let keywordsPopulated = false; // Add this flag
+let populatedLang = null; // Stores the language of the populated list
 
 function populateAndShowKeywords() {
-  if (!keywordsPopulated) {
-    const currentLang = document.documentElement.lang || "ko";
+  const currentLang = document.documentElement.lang || "ko";
+  
+  if (populatedLang !== currentLang) {
     dreamKeywordList.innerHTML = ""; // Clear existing
 
     const titleText = {
@@ -444,8 +445,9 @@ function populateAndShowKeywords() {
       }
     }
     dreamKeywordList.appendChild(ul);
-    keywordsPopulated = true; // Set flag to true
+    populatedLang = currentLang; // Update the populated language
   }
+  
   dreamKeywordList.classList.add("visible");
 }
 
